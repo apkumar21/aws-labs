@@ -1,0 +1,5 @@
+# Intilize git project 
+git init
+
+#create projects from aws templates using aes sam cli
+
