@@ -1,5 +1,46 @@
 # Intilize git project 
-git init
+    git init
 
-#create projects from aws templates using aes sam cli
+# create projects from aws templates using aes sam cli
+
+    https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-getting-started-hello-world.html
+
+    sam init #choose desired options to create the projects from templates
+
+    sam build
+
+    sam deploy -g 
+
+    sam list endpoints --output json #
+
+# To send get requests to api from command line
+
+    curl https://ets1gv8lxi.execute-api.us-west-2.amazonaws.com/Prod/hello/
+
+# To call remote function from local
+
+    sam remote invoke HelloWorldFunction --stack-name hello-app
+
+# To sync local changes to the AWS Cloud
+    sam sync --watch
+
+    curl https://ets1gv8lxi.execute-api.us-west-2.amazonaws.com/Prod/hello/
+
+# To sync local changes to the AWS Cloud
+
+
+# To invoke your Lambda function locally
+
+    sam local invoke
+
+# To host your API locally and invoke endpoint
+
+    sam local start-api
+
+    curl http://127.0.0.1:3000/hello
+
+# Delete the app from aws cloude
+    sam delete
+
+git remote add origin https://github.com/apkumar21/aws-labs
 
